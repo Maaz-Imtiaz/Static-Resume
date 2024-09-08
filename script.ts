@@ -3,7 +3,7 @@ interface IResume {
   email: string;
   phone: string;
   education: string[];
-  skills: string[];
+  skill: string[];
   workExperience: string[];
 }
 
@@ -13,7 +13,7 @@ class Resume implements IResume {
     public email: string,
     public phone: string,
     public education: string[],
-    public skills: string[],
+    public skill: string[],
     public workExperience: string[]
   ) {}
 
@@ -22,7 +22,7 @@ class Resume implements IResume {
   }
 
   addSkill(newSkill: string) {
-    this.skills.push(newSkill);
+    this.skill.push(newSkill);
   }
 
   addExperience(newExperience: string) {
